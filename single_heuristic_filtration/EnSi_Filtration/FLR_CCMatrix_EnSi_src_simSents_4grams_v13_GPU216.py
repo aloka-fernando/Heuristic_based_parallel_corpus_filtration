@@ -95,7 +95,7 @@ def substring2index(substrings):
 
 def get_non_ovelaping_sentences(substring_list):
     if len(substring_list) > 0:
-        overlaps = [True for substring in substring_list if substring_frequencies[substring] > 10]
+        overlaps = [True for substring in substring_list if substring_frequencies[substring] > 1]
         if any(overlaps):
             return "Overlapping"
         else:
